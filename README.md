@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png">
 
 # perplexity-pro-assistant
 Extensión completa y funcional de VSCode para integrar Perplexity Pro
