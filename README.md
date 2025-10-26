@@ -196,15 +196,19 @@ code --install-extension perplexity-pro-assistant-1.0.0.vsix
 
 Comandos Disponibles
 
-Ctrl+Shift+P → "Perplexity: Abrir Chat" - 
+- Ctrl+Shift+P → "Perplexity: Abrir Chat" - 
 Abre el panel de chat interactivo
-Click derecho → "Perplexity: Explicar Código" - 
-Explica el código seleccionado - 
-Click derecho → "Perplexity: Optimizar Código" - 
+
+- Click derecho → "Perplexity: Explicar Código" - 
+Explica el código seleccionado
+
+- Click derecho → "Perplexity: Optimizar Código" - 
 Sugiere optimizaciones
-Click derecho → "Perplexity: Generar Tests" - 
+
+- Click derecho → "Perplexity: Generar Tests" - 
 Crea tests unitarios automáticamente
-Click derecho → "Perplexity: Documentar Código" - 
+
+- Click derecho → "Perplexity: Documentar Código" - 
 Genera documentación profesional
 
 Solución de Problemas
