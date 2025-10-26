@@ -1,0 +1,104 @@
+{
+  "name": "perplexity-pro-assistant",
+  "displayName": "Perplexity Pro Assistant",
+  "description": "Integración completa de Perplexity Pro con chat y asistencia de IA",
+  "version": "1.0.1",
+  "publisher": "César Mencía",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["AI", "Programming Languages", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "perplexity.openChat",
+        "title": "Perplexity: Abrir Chat",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "perplexity.explainCode",
+        "title": "Perplexity: Explicar Código"
+      },
+      {
+        "command": "perplexity.optimizeCode",
+        "title": "Perplexity: Optimizar Código"
+      },
+      {
+        "command": "perplexity.generateTests",
+        "title": "Perplexity: Generar Tests"
+      },
+      {
+        "command": "perplexity.documentCode",
+        "title": "Perplexity: Documentar Código"
+      },
+      {
+        "command": "perplexity.fixError",
+        "title": "Perplexity: Solucionar Error"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "perplexity.explainCode",
+          "group": "perplexity@1"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "perplexity.optimizeCode",
+          "group": "perplexity@2"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "perplexity.generateTests",
+          "group": "perplexity@3"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "perplexity.documentCode",
+          "group": "perplexity@4"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Perplexity Pro",
+      "properties": {
+        "perplexity.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Tu API Key de Perplexity Pro"
+        },
+        "perplexity.model": {
+          "type": "string",
+          "default": "llama-3.1-sonar-large-128k-online",
+          "enum": [
+            "llama-3.1-sonar-large-128k-online",
+            "llama-3.1-sonar-small-128k-online",
+            "llama-3.1-sonar-large-128k-chat",
+            "llama-3.1-sonar-small-128k-chat"
+          ],
+          "description": "Modelo de IA a utilizar"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.45.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
