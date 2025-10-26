@@ -106,6 +106,7 @@ La extensión está lista para usar y se puede empaquetar para distribución en 
 
 📋 Características Principales
 
+
 💬 Chat Integrado
 Panel lateral con chat interactivo conectado a Perplexity Pro API
 
@@ -124,16 +125,25 @@ Crea tests unitarios automáticamente para tu código
 🔧 Refactorización
 Sugerencias inteligentes para mejorar la calidad del código
 
+
 🎯 Casos de Uso
 
-Asistente de Programación
+<ins>Asistente de Programación</ins>
+
 Pregunta sobre cualquier concepto de programación en tiempo real
-Revisión de Código
+
+<ins>Revisión de Código</ins>
+
 Obtén sugerencias de mejora y detección de bugs
-Documentación Automática
+
+<ins>Documentación Automática</ins>
+
 Genera comentarios JSDoc/docstrings profesionales
-Resolución de Errores
+
+<ins>Resolución de Errores</ins>
+
 Analiza errores y recibe soluciones contextualizadas
+
 
 🚀 Instalación y Uso
 
