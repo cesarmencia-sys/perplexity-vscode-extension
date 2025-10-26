@@ -1,4 +1,4 @@
-![Favicon](https://github.com/cesarmencia-sys/perplexity-pro-assistant/images/favicon.png)
+![Favicon](https://github.com/cesarmencia-sys/perplexity-vscode-extension/images/favicon.png)
 
 # perplexity-pro-assistant
 Extensión completa y funcional de VSCode para integrar Perplexity Pro
