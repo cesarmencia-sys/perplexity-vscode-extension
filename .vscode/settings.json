@@ -1,5 +1,5 @@
 {
-    "perplexity.apiKey": "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",
+    "perplexity.apiKey": "pplx-your-api-key",
     "editor.defaultFormatter": "cesar-mencia.perplexity-pro-assistant",
     "editor.defaultFoldingRangeProvider": null,
     "notebook.defaultFormatter": "esbenp.prettier-vscode"
